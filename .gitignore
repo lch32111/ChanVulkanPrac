@@ -12,8 +12,5 @@ ResourceFolder/
 ImageFolder/
 ModelFolder/
 
-# Don't Include the header files for savings of storage
-VTBasic/
-
 # Don't Include Imgui Setting Save File.
 imgui.ini
