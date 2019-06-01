@@ -27,6 +27,7 @@
 #include <map>
 #include <optional>
 #include <set>
+#include <fstream>
 
 const int WIDTH = 800;
 const int HEIGHT = 600;
@@ -64,6 +65,14 @@ void DestroyDebugUtilsMessengerEXT(VkInstance instance,
 	{
 		func(instance, debugMessenger, pAllocator);
 	}
+}
+
+VkShaderModule createsShaderModule(const std::vector<char>& code)
+{
+	VkShaderModuleCreateInfo createInfo = {};
+	createInfo.sType = VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO;
+	createInfo.codeSize = code.size();
+	createInfo.pCode = reinterpret_cast<const uint32_t*>(code.data());
 }
 
 struct QueueFamilyIndices
@@ -489,6 +498,8 @@ private:
 
 	void createGraphicsPipeline()
 	{
+		auto vertShaderCode = readFile("handyShader.vert.spv");
+		auto fragShaderCode = readFile("handyShader.frag.spv");
 	}
 
 	std::vector<const char*> getRequiredExtensions()
@@ -729,6 +740,25 @@ private:
 		}
 #undef local_max
 #undef local_min
+	}
+
+	static std::vector<char> readFile(const std::string& filename)
+	{
+		std::ifstream file(filename, std::ios::ate | std::ios::binary);
+		if (!file.is_open())
+		{
+			throw std::runtime_error("failed to open file!");
+		}
+
+		size_t fileSize = (size_t)file.tellg();
+		std::vector<char> buffer(fileSize);
+
+		file.seekg(0);
+		file.read(buffer.data(), fileSize);
+
+		file.close();
+
+		return buffer;
 	}
 
 };
