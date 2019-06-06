@@ -153,6 +153,12 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="handyShader.frag" />
+    <None Include="handyShader.frag.spv" />
+    <None Include="handyShader.vert" />
+    <None Include="handyShader.vert.spv" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
