@@ -14,6 +14,8 @@
 		8CBF208822AA3DAF00245DC0 /* libglfw.3.4.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CBF208622AA3C4300245DC0 /* libglfw.3.4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8CBF208922AA3DB100245DC0 /* libvulkan.1.1.106.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CBF208222AA3C2C00245DC0 /* libvulkan.1.1.106.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8CBF208A22AA3DB300245DC0 /* libvulkan.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CBF208322AA3C2C00245DC0 /* libvulkan.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8CBF208D22AA41E200245DC0 /* handyShader.frag.spv in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CBF208B22AA41E200245DC0 /* handyShader.frag.spv */; };
+		8CBF208E22AA41E200245DC0 /* handyShader.vert.spv in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CBF208C22AA41E200245DC0 /* handyShader.vert.spv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +25,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8CBF208D22AA41E200245DC0 /* handyShader.frag.spv in CopyFiles */,
+				8CBF208E22AA41E200245DC0 /* handyShader.vert.spv in CopyFiles */,
 				8CBF208822AA3DAF00245DC0 /* libglfw.3.4.dylib in CopyFiles */,
 				8CBF208922AA3DB100245DC0 /* libvulkan.1.1.106.dylib in CopyFiles */,
 				8CBF208A22AA3DB300245DC0 /* libvulkan.1.dylib in CopyFiles */,
@@ -52,6 +56,8 @@
 		8CBF208222AA3C2C00245DC0 /* libvulkan.1.1.106.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.1.106.dylib; path = "../../../../../Downloads/vulkansdk-macos-1.1.106.0/macOS/lib/libvulkan.1.1.106.dylib"; sourceTree = "<group>"; };
 		8CBF208322AA3C2C00245DC0 /* libvulkan.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvulkan.1.dylib; path = "../../../../../Downloads/vulkansdk-macos-1.1.106.0/macOS/lib/libvulkan.1.dylib"; sourceTree = "<group>"; };
 		8CBF208622AA3C4300245DC0 /* libglfw.3.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.4.dylib; path = ../../../../../../../usr/local/lib/libglfw.3.4.dylib; sourceTree = "<group>"; };
+		8CBF208B22AA41E200245DC0 /* handyShader.frag.spv */ = {isa = PBXFileReference; lastKnownFileType = file; name = handyShader.frag.spv; path = ../Commons/handyShader.frag.spv; sourceTree = "<group>"; };
+		8CBF208C22AA41E200245DC0 /* handyShader.vert.spv */ = {isa = PBXFileReference; lastKnownFileType = file; name = handyShader.vert.spv; path = ../Commons/handyShader.vert.spv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,8 @@
 		8CB930182292A31C00129370 = {
 			isa = PBXGroup;
 			children = (
+				8CBF208B22AA41E200245DC0 /* handyShader.frag.spv */,
+				8CBF208C22AA41E200245DC0 /* handyShader.vert.spv */,
 				8CBF208622AA3C4300245DC0 /* libglfw.3.4.dylib */,
 				8CBF208222AA3C2C00245DC0 /* libvulkan.1.1.106.dylib */,
 				8CBF208322AA3C2C00245DC0 /* libvulkan.1.dylib */,
