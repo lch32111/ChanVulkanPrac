@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -154,10 +154,14 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="handyShader.frag" />
-    <None Include="handyShader.frag.spv" />
-    <None Include="handyShader.vert" />
-    <None Include="handyShader.vert.spv" />
+    <None Include="..\..\Commons\bufferShader.frag" />
+    <None Include="..\..\Commons\bufferShader.frag.spv" />
+    <None Include="..\..\Commons\bufferShader.vert" />
+    <None Include="..\..\Commons\bufferShader.vert.spv" />
+    <None Include="..\..\Commons\handyShader.frag" />
+    <None Include="..\..\Commons\handyShader.frag.spv" />
+    <None Include="..\..\Commons\handyShader.vert" />
+    <None Include="..\..\Commons\handyShader.vert.spv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

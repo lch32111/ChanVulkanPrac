@@ -23,16 +23,28 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="handyShader.vert">
+    <None Include="..\..\Commons\bufferShader.frag">
       <Filter>ShaderFolder</Filter>
     </None>
-    <None Include="handyShader.frag">
+    <None Include="..\..\Commons\bufferShader.vert">
       <Filter>ShaderFolder</Filter>
     </None>
-    <None Include="handyShader.frag.spv">
+    <None Include="..\..\Commons\handyShader.frag">
       <Filter>ShaderFolder</Filter>
     </None>
-    <None Include="handyShader.vert.spv">
+    <None Include="..\..\Commons\handyShader.frag.spv">
+      <Filter>ShaderFolder</Filter>
+    </None>
+    <None Include="..\..\Commons\handyShader.vert">
+      <Filter>ShaderFolder</Filter>
+    </None>
+    <None Include="..\..\Commons\handyShader.vert.spv">
+      <Filter>ShaderFolder</Filter>
+    </None>
+    <None Include="..\..\Commons\bufferShader.frag.spv">
+      <Filter>ShaderFolder</Filter>
+    </None>
+    <None Include="..\..\Commons\bufferShader.vert.spv">
       <Filter>ShaderFolder</Filter>
     </None>
   </ItemGroup>
