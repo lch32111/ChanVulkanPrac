@@ -47,5 +47,17 @@
     <None Include="..\..\Commons\bufferShader.vert.spv">
       <Filter>ShaderFolder</Filter>
     </None>
+    <None Include="..\..\Commons\uboShader.frag">
+      <Filter>ShaderFolder</Filter>
+    </None>
+    <None Include="..\..\Commons\uboShader.vert">
+      <Filter>ShaderFolder</Filter>
+    </None>
+    <None Include="..\..\Commons\uboShader.frag.spv">
+      <Filter>ShaderFolder</Filter>
+    </None>
+    <None Include="..\..\Commons\uboShader.vert.spv">
+      <Filter>ShaderFolder</Filter>
+    </None>
   </ItemGroup>
 </Project>
